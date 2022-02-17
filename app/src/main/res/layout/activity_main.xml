@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contador"
+        android:textColor="#009688"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="¿Qué es lo que va a contar?"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_temaContador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_temaContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Ingrese lo que contara"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_clicker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#2C8725"
+        android:text="Sumar +1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cuenta"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/btn_restar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#870F0F"
+        android:text="Restar -1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_borrar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clicker"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cuenta"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/tv_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_borrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#673AB7"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
